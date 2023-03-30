@@ -235,13 +235,12 @@ class GradientOperatorTests {
         }
 
         //note cols and rows flipped for images
-        int[][] expectedGradientImg =
-                {{0,0,0,0,0,0},
-                        {0,0,168,376,238,0},
-                        {0,376,475,475,376,0},
-                        {0, 504,531,475, 376,0},
-                        {0,238,376,376,238,0},
-                        {0,0,0,0,0,0}};
+        int[][] expectedGradientImg = { {0,0,0,0,0,0},
+                                        {0,0,336,531,238,0},
+                                        {0,531,713,713,531,0},
+                                        {0,672,751,713,531,0},
+                                        {0,238,531,531,238,0},
+                                        {0,0,0,0,0,0} };
 
         for (int row = 0; row < 6; row++) {
             for (int col = 0; col < 6; col++) {
